@@ -1,11 +1,11 @@
-// import { Client } from "@notionhq/client";
-// const notion = new Client({ auth: process.env.NOTION_TOKEN });
+// import { getNotionDatabaseItems } from "@/utils/getNotionDatabaseItems";
 
 export async function GET() {
-  return new Response("Hello, Slack!", {
+  // const notionDatabaseItems = await getNotionDatabaseItems();
+  return new Response(JSON.stringify("hellow words"), {
     status: 200,
-    headers: {
-      "Content-Type": "application/json",
-    },
+    // headers: {
+    //   "Content-Type": "application/json",
+    // },
   });
 }
